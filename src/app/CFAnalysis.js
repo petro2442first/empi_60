@@ -6,8 +6,8 @@ export default class CFAnalysis {
   constructor(...params) {
     this.#x = params[0].x || params[0]["x"] || params[0];
     this.#y = params[0].y || params[0]["y"] || params[1];
-    console.log("1", params[0], params[1]);
-    console.log(this.#x, this.#y);
+    this.#x.pop();
+    this.#y.pop();
   }
   // Props
   set x(list) {
